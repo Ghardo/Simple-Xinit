@@ -1,0 +1,4 @@
+#!/bin/bash
+STARTXINIT=0
+
+exec ck-launch-session dbus-launch gnome-session

@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#case $1 in 
+#	bevor)
+#	echo "${0} called bevor"
+#	;;
+#	after)
+#	if [ "$2" == "gnome" ] ; then
+#		echo "YEAH Gnome"
+#	fi
+#	echo "${0} called after"
+#	;;
+#esac
+
+
+case $1 in 
+       bevor)
+       ;;
+       after)
+       /usr/bin/xset -b
+#       exec /usr/bin/gnome-settings-daemon &
+       exec /usr/bin/gnome-power-manager &
+       ;;
+esac
+
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+STARTXINIT=1
+
+exec ck-launch-session dbus-launch wmii &
